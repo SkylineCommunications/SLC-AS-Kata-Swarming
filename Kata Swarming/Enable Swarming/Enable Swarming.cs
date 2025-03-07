@@ -123,6 +123,9 @@ namespace EnableSwarming
 				AddPrerequisiteWidget("No legacy reports and dashboards", resp.LegacyReportsAndDashboardsDisabled);
 				AddPrerequisiteWidget("No incompatible enhanced services", resp.NoIncompatibleEnhancedServicesOnDMS);
 
+				if (!resp.SatisfiesPrerequisites)
+					return; // dont do alarmid usage without meeting static requirements
+
 				sb = new StringBuilder();
 				sb.AppendLine();
 				sb.AppendLine();
