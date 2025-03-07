@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata Swarming", "Kata Swarming\Kata Swarming.csproj", "{EBA27483-D1CB-4FC5-95D8-16614EF94821}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enable Swarming", "Enable Swarming\Enable Swarming.csproj", "{D061F0C4-DF89-4FE1-B099-963E3C042532}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mask Critical Alarms", "Mask Critical Alarms\Mask Critical Alarms.csproj", "{E3349D3A-C4B5-4783-BA72-1C39F06B98C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA27483-D1CB-4FC5-95D8-16614EF94821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA27483-D1CB-4FC5-95D8-16614EF94821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA27483-D1CB-4FC5-95D8-16614EF94821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA27483-D1CB-4FC5-95D8-16614EF94821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D061F0C4-DF89-4FE1-B099-963E3C042532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D061F0C4-DF89-4FE1-B099-963E3C042532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D061F0C4-DF89-4FE1-B099-963E3C042532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D061F0C4-DF89-4FE1-B099-963E3C042532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3349D3A-C4B5-4783-BA72-1C39F06B98C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3349D3A-C4B5-4783-BA72-1C39F06B98C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3349D3A-C4B5-4783-BA72-1C39F06B98C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3349D3A-C4B5-4783-BA72-1C39F06B98C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13DD57A5-C198-41B9-B1C7-57548AFEEF48}
+	EndGlobalSection
+EndGlobal
