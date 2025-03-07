@@ -68,7 +68,9 @@ namespace EnableSwarming
 			var req = new SwarmingPrerequisitesCheckRequest()
 			{
 				AnalyzeAlarmIDUsage = analyzeAlarmIds,
-				DataMinerID = engine.GetUserConnection().ServerDetails.AgentID,
+
+				// do alarmid analysis on local agent only (not really necessary, just gives a better summary)
+				DataMinerID = analyzeAlarmIds ? engine.GetUserConnection().ServerDetails.AgentID : -1,
 			};
 
 			var resp = engine.SendSLNetMessages(new[] { req });
@@ -124,7 +126,17 @@ namespace EnableSwarming
 				AddPrerequisiteWidget("No incompatible enhanced services", resp.NoIncompatibleEnhancedServicesOnDMS);
 
 				if (!resp.SatisfiesPrerequisites)
+				{
+					sb = new StringBuilder();
+					sb.AppendLine();
+					sb.AppendLine("Result summary:");
+					sb.AppendLine();
+					sb.AppendLine(resp.Summary);
+
+					AddLabelWidget(sb.ToString());
+
 					return; // dont do alarmid usage without meeting static requirements
+				}
 
 				sb = new StringBuilder();
 				sb.AppendLine();
