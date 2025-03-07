@@ -135,6 +135,11 @@ namespace EnableSwarming
 
 					AddLabelWidget(sb.ToString());
 
+					var secretButton = new Button(string.Empty);
+					secretButton.Width = 1;
+					secretButton.Height = 1;
+					AddWidget(secretButton, _widgetRowIdx++, 0);
+
 					return; // dont do alarmid usage without meeting static requirements
 				}
 
@@ -191,7 +196,7 @@ namespace EnableSwarming
 
 					AddLabelWidget(sb.ToString());
 
-					var enableButton = new Button("Enable Swarming");
+					var enableButton = new Button("Restart DMS and enable Swarming");
 					enableButton.Pressed += EnableButton_Pressed;
 					AddWidget(enableButton, _widgetRowIdx++, 0);
 				}
