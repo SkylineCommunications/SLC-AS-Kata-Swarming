@@ -58,7 +58,10 @@ namespace MaskCriticalAlarms
 			var elementID = ElementID.FromString(inputParameter);
 
 			if (elementID is null)
+			{
 				engine.ExitFail("No valid input ElementID");
+				return;
+			}
 
 			var getActiveAlarms = new GetActiveAlarmsMessage()
 			{
@@ -69,7 +72,10 @@ namespace MaskCriticalAlarms
 			var response = connection.HandleMessage(getActiveAlarms).FirstOrDefault() as ActiveAlarmsResponseMessage;
 
 			if(response is null)
+			{
 				engine.ExitFail("Failed to get active alarms");
+				return;
+			}
 
 			var criticalAlarms = response.ActiveAlarms.Where(alarm => alarm.Severity == "Critical").ToArray();
 
