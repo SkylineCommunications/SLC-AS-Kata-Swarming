@@ -33,7 +33,7 @@ id: b087dd80-8a62-4ef0-9321-76964ac4e039
 #   Max length: 100 characters.
 #   Cannot contain newlines.
 #   Cannot contain leading or trailing whitespace characters.
-title: Kata Swarming
+title: Tutorial - Getting started with Swarming
 # [Optional]
 # General information about the Catalog item.
 #   Max length: 100,000 characters
@@ -65,4 +65,5 @@ owners:
 #   Cannot contain leading or trailing whitespace characters.
 tags:
   - Kata
+  - Tutorial
   - Swarming
