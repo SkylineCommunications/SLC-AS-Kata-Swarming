@@ -215,7 +215,7 @@ namespace EnableSwarming
 
 			private void AddLabelWidget(string label)
 			{
-				AddWidget(new Label(label), _widgetRowIdx++, 0);
+				AddWidget(new Label(label), _widgetRowIdx++, 0, 1, 2);
 			}
 		}
 	}
