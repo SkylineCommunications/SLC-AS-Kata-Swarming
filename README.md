@@ -1,3 +1,3 @@
 # Tutorial - Getting started with Swarming
 
-See [here](./Kata Swarming/Kata Swarming/CatalogInformation/README.md) for more info.
+See [here](Kata%20Swarming/Kata%20Swarming/CatalogInformation/README.md) for more info.
