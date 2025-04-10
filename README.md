@@ -1,2 +1,3 @@
-# SLC-AS-Kata-Swarming
-Automation scripts used in the 'Getting started with Swarming' kata tutorial
+# Tutorial - Getting started with Swarming
+
+See [here](./Kata Swarming/Kata Swarming/CatalogInformation/README.md) for more info.
